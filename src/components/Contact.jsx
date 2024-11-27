@@ -47,21 +47,21 @@ const decrements = (e) =>{
 }
 
   return (
-    <div className="container">
+    <>
+    <div className="container ">
       {carts.length > 0 ? 
-      
-      <div className="full" style={{marginBottom:"80"}}>
+      <>
+      <h1 style={{fontSize:"20px", width:"100%",alignItems:"center",display:"flex",justifyContent:"flex-start",marginBlock:"28px",color:"green"}}>Shopping Cart <i class="fa-solid fa-cart-shopping fa-beat" style={{color: "green",marginLeft:"10px",fontSize:"16px"}}></i></h1>
+     
+      <div className="full flex" style={{marginBottom:"80"}}>
 
-        <div className="heading">
-
-        <h1 style={{fontSize:"23px"}}>Shopping Cart <i class="fa-solid fa-cart-shopping"></i></h1>
-        </div>
-
+       
+      <div className="allcart">
       {
         carts.map((data)=>{
           return (
             <>
-              <div className="container">
+              <div className="container flex" style={{gap:"10px"}}>
                 <div className="cart">
                   <div className="name" style={{display:"flex"}}>
                   <img src={data.images} alt="" onClick={()=>setuser(data)} />
@@ -77,7 +77,7 @@ const decrements = (e) =>{
 
                   <div className="eachprice">
                     <p style={{fontSize:"13px",color:"black",}}>Each</p>
-                  <p  style={{fontSize:"15px",color:"black",fontWeight:"bold"}}>₹ {data.price}.00</p>
+                  <p  style={{fontSize:"14px",color:"black",fontWeight:"bold"}}>₹ {data.price}.00</p>
                   </div>
                   <div className="totalcount">
                   <p style={{fontSize:"13px",color:"black"}}>Quantity</p>
@@ -94,7 +94,7 @@ const decrements = (e) =>{
 
               <tfoot style={{display:"flex",marginTop:"7px"}}>
           <tr style={{display:"flex" , width:"100%",justifyContent:"flex-end"}}>
-            <th style={{justifyContent:"flex-end", fontSize:"13px",color:"black",lineHeight:"2",fontWeight:"lighter"}}>Total price <br /> <span style={{fontWeight:"bold",fontSize:"16px"}}>₹ {data.qnty * data.price}.00</span> </th>
+            <th style={{justifyContent:"flex-end", fontSize:"13px",color:"black",lineHeight:"2",fontWeight:"lighter"}}>Total price <br /> <span style={{fontWeight:"bold",fontSize:"14px"}}>₹ {data.qnty * data.price}.00</span> </th>
             </tr> 
         </tfoot>
                   <div className="delete" style={{marginTop:"13px"}}>
@@ -104,29 +104,63 @@ const decrements = (e) =>{
                   </div>
             
                 </div>
+
+
               </div>
               
-              
+                
             </>
            )
   })
   
 }
-        
+</div>
+            {/* /////////////// cart box /////////// */}
+
+              <div className="carttotal">
+              <p style={{fontSize:"13px",color:"black",fontWeight:"bold"}}>CART TOTAL</p>
+              <div className="flex" style={{fontSize:"15px",color:"gray",justifyContent:"space-between"}}> 
+                <p>Total Items : </p>
+                <p style={{color:"black"}} >{carts.length}</p>
+              </div>
+              <div style={{fontSize:"13px",backgroundColor:"#eeee",height:"0.5px"}}></div>
+              <p style={{fontSize:"14px",color:"black",marginBlock:"22px"}}>Shipping</p>
+              <p style={{fontSize:"12px"}}>Kolkata, West Bengal</p>
+              <div style={{fontSize:"13px",backgroundColor:"#eeee",height:"0.5px",marginTop:"10px"}}></div>
+
+
+              <div className="flex" style={{fontSize:"15px",color:"black",marginBlock:"8px", justifyContent:"space-between"}}>
+                <p >Total Price : </p>
+                <p> ₹{totalprice}</p>
+              </div>
+
+              <button className="featurebutton" style={{width:"100%",backgroundColor:"#20a300",color:"white",borderRadius:"4px",paddingBlock: "8px", marginTop: "14px"}} onClick={()=>navigate("/checkout")}>Proceed to Checkout</button>
+              </div>
+
+      
+{/*         
                 <tfoot style={{display:"flex",marginTop:"4"}}>
           <tr style={{display:"flex" , width:"100%",justifyContent:"flex-end"}}>
             <th style={{justifyContent:"flex-end", fontSize:"14px",color:"black",lineHeight:"2",fontWeight:"lighter"}}>Total price <br /> <span style={{fontWeight:"bold",fontSize:"16px"}}>₹ {totalprice}.00</span> </th>
             </tr> 
-        </tfoot>
+        </tfoot> */}
       </div>
+      </>
+      
     : 
-    <div className="emptycart">
-      <img src="https://static.vecteezy.com/system/resources/previews/016/462/240/non_2x/empty-shopping-cart-illustration-concept-on-white-background-vector.jpg" alt="" />
-    </div>
+    <>
     
+    <div className="emptycart">
+      <img src="images/shopping.png" alt="" />
+    <h4 style={{lineHeight:"0"}}>Your Cart is Empty! 😢</h4>
+    <p style={{lineHeight:"0", color:"gray"}}>add something to make me happy 😊</p>
+    </div>
+    </>
   }
+
  </div>
  
+ </>
   )
 }
 

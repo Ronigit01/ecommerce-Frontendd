@@ -13,8 +13,8 @@ import Userdetail from './components/Userdetail'
 import Searchproduct from './components/Searchproduct'
 import toast, { Toaster } from 'react-hot-toast';
 import ProductPage from './components/ProductPage'
-
-
+import Checkout from './components/Checkout'
+import Orerdone from './components/Orerdone'
 
 
 function App() {
@@ -40,6 +40,8 @@ function App() {
  
      
       <Route path="/Contact" element={ <Contact/> } />
+      <Route path="/checkout" element={ <Checkout/> } />
+      <Route path="/done" element={ <Orerdone />} />
      
      
     </Routes>

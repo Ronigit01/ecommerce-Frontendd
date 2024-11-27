@@ -414,13 +414,27 @@ nav{
 .cart {
     display: flex;
     height: 150px;
-    width: 70%;
+    width: 100%;
     border-top: 1px solid rgb(233, 233, 233);
     border-bottom: 1px solid rgb(233, 233, 233);
     padding: 10px; 
     border-radius: 5px;
    
 
+}
+
+.carttotal {
+   
+    width: 100%;
+    margin-left: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    text-align: left;
+    padding: 20px;
+    height: 200px;
+    line-height: 0;
+    font-size: 14px;
+    box-shadow: 0px 0px 6px #a4a4a4;
 }
 
 
@@ -450,7 +464,7 @@ nav{
 
 .flexx {
     
-    gap: 70px;
+    gap: 50px;
 } 
 
 .heading {
@@ -547,13 +561,15 @@ form {
 }
 .emptycart {
     display: flex;
+    width: 100%;
+    flex-direction: column;
     margin-top: 50px;
     align-items: center;
     justify-content: center;
 }
 .emptycart img {
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 90%;
 }
 
 footer  {
@@ -786,12 +802,12 @@ tfoot {
 
 .contact input {
     width: 60%;
-    height: 16px;
+
     padding: 10px;
     outline: none;
     border-radius: 5px;
-    border: 1px solid #212d3b;
-    box-shadow: 0px 0px 4px #384655;
+    border: 1px solid #606b77;
+    box-shadow: 0px 0px 4px #cacaca;
 }
 
 .contact textarea {
@@ -799,20 +815,124 @@ tfoot {
     padding: 10px;
     outline: none;
     border-radius: 5px;
-    border: 1px solid #212d3b;
-    box-shadow: 0px 0px 4px #384655
+    border: 1px solid #606b77;
+    box-shadow: 0px 0px 4px #cacaca ;
 }
 
 .buttonn {
-    padding: 10px 40px;
+    padding: 8px 40px;
     font-size: 16px;
     text-align: center;
-    background-color: #f0e003 ;
-    color: rgb(0, 0, 0);
-    border: 1px solid white;
-    outline: none;
+    background-color:#004674 ;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     transition: 0.2s;
-    margin-top: 14px;
+    margin-top: 8px;
     border-radius: 5px;
+    width: 100%;
+}
+
+.buttonn:hover {
+      background-color:#005374 ;
+    color: rgb(255, 255, 255);
+}
+
+
+.contactfree {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.text {
+   color:#131a22;
+   width: 150px;
+    outline: none;
+    padding-block: 8px;
+    padding-left: 16px;
+    padding-right: 10px;
+    border: 1px solid #183b56;
+    border-radius: 60px;
+}
+
+.contactfree h2 {
+    font-size: 24px;
+}
+
+.check {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 20px; 
+    border : 1px solid rgb(214, 214, 214);
+    border-radius: 8px;
+    transition: 0.2s;
+}
+.checkout {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.checkout input {
+    padding: 8px;
+    outline: none;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 4px;
+}
+
+.checkout label {
+    font-size: 14px;
+}
+
+.checkout p{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 0;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+}
+
+.full {
+    gap: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+.done img {
+    height: 200px;
+}
+
+.done {
+    display: flex;
+    align-items: center;
+   margin-top: 100px;
+    height:100vh;
+    flex-direction: column;
+}
+
+
+.done h2 {
+   
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+   
+}
+
+.done h4 {
+    display: flex;
+    align-items: center;
+    width: 680px;
+    color: rgb(99, 99, 99);
+    font-weight: 100;
+   
 }

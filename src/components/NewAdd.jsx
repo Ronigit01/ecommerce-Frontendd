@@ -1,18 +1,29 @@
 import React from 'react'
 import Productdata from './Productdata'
+import Populardata from './Populardata'
 
 function NewAdd() {
   return (
     <>
+
     <div className="container flex content  " style={{flexWrap:"wrap"}}>
     {
-        Productdata.map((item)=>{
+        Populardata.map((item)=>{
             return(
                 <>
-                 <div className="newcard">
+                 <div className="newcard" onClick={()=>setuser(item)}> 
                     <img src={item.image} alt="" />
                     <p>{item.title}</p>
-                    <p style={{lineHeight:"0",fontSize:"11px",color:"rgba(169,6,157,255)"}}>{item.price}</p>
+
+                     <div className="price" style={{display:"flex"}}>
+                    <p style={{lineHeight:"0",fontSize:"14px"}}>₹{item.price}.00</p>
+                    <p className="rating" style={{justifyContent:"flex-end"}}><span>4.3</span></p>
+                    </div>
+                    
+
+                    <button className="featurebutton" >Coming Soon</button>
+                    
+                   
                 </div>
              
                 </>
