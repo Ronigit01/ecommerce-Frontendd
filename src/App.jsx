@@ -32,14 +32,14 @@ function App() {
       </Route>
       <Route path="featured/:id" element={<Userdetail />} />
 
-      <Route path="/about" element={ <About/> } />
+      <Route path="/contact" element={ <About/> } />
       <Route path="/product" element={ <ProductPage/> } />
       
       <Route path="/searchproduct" element={ <Searchproduct/> } />
        
  
      
-      <Route path="/Contact" element={ <Contact/> } />
+      <Route path="/cart" element={ <Contact/> } />
       <Route path="/checkout" element={ <Checkout/> } />
       <Route path="/done" element={ <Orerdone />} />
      

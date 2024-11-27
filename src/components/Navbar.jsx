@@ -46,10 +46,10 @@ function Navbar() {
                     <NavLink className="nav-link"  to={"/product"}>Shop</NavLink>
                 </li>
                 <li>
-                    <NavLink  className="nav-link" to={"/about"}>Contact</NavLink>
+                    <NavLink  className="nav-link" to={"/contact"}>Contact</NavLink>
                 </li>
                 <li>
-                    <NavLink style={{position:"relative"}} className="nav-link"  to={"/contact"}>Cart<span style={{position:"absolute"}}>{carts.length}</span></NavLink>
+                    <NavLink style={{position:"relative"}} className="nav-link"  to={"/cart"}>Cart<span style={{position:"absolute"}}>{carts.length}</span></NavLink>
                 </li>
                 
             </ul>

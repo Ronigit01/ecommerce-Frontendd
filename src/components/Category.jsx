@@ -14,27 +14,27 @@ function Category() {
                 </div>
                 <div className="card">
                     <img src="./images/kurti.png" alt="" />
-                    <p>Lady's Bag</p>
+                    <p>Lady's kurti</p>
                 </div>
                 <div className="card">
                     <img src="./images/dress.png" alt="" />
-                    <p>Lady's Bag</p>
+                    <p>Lady's Dress</p>
                 </div>
                 <div className="card">
                     <img src="./images/cap.png" alt="" />
-                    <p>Lady's Bag</p>
+                    <p>Winter Cap</p>
                 </div>
                 <div className="card">
                     <img src="./images/pant.png" alt="" />
-                    <p>Lady's Bag</p>
+                    <p>Women Cargos</p>
                 </div>
                 <div className="card">
                     <img src="./images/sew.png" alt="" />
-                    <p>Lady's Bag</p>
+                    <p>Sweater</p>
                 </div>
                 <div className="card">
                     <img src="./images/pilloww.png" alt="" />
-                    <p>Lady's Bag</p>
+                    <p>Pillow</p>
                 </div>
                 
             
