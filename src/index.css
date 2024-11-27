@@ -909,7 +909,8 @@ tfoot {
 }
 
 .done img {
-    height: 200px;
+    height: 100px;
+    margin-bottom: 40px;
 }
 
 .done {
